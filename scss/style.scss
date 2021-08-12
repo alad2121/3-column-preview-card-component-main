@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
+
+// Global Rules //
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +20,15 @@ body {
 .row {
   height: 100vh;
 }
+
+
+// Global Card Rules //
 .card {
   height: 600px;
   padding: 3% 4%;
+  border-radius: 0%;
+  transition: 0.15s ease-in-out;
+
   .pic {
     margin-top: 15px;
   }
@@ -47,9 +55,7 @@ body {
   }
   .button-container {
     margin-top: 110px;
-    // height: 90%;
     button {
-      //    margin-top: 110px;
       border-radius: 100px 100px 100px 100px;
       height: 55px;
       width: 180px;
@@ -57,7 +63,12 @@ body {
     }
   }
 }
+.card:hover{
+  height: 620px;
+}
 
+
+// Card: Sedans //
 #card-1 {
   background-color: hsl(31, 77%, 52%);
   border-radius: 2% 0% 0% 2%;
@@ -73,6 +84,8 @@ body {
   }
 }
 
+
+// Card: SUVS //
 #card-2 {
   background-color: hsl(184, 100%, 22%);
 
@@ -87,6 +100,7 @@ body {
   }
 }
 
+// Card: Luxury //
 #card-3 {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0% 2% 2% 0%;
@@ -103,7 +117,7 @@ body {
   }
 }
 
-// Tablet Layout
+// Tablet Layout //
 @media (max-width: 991px) {
   
   .container-fluid {
@@ -111,12 +125,19 @@ body {
     margin-bottom: 1100px;
   }
 
+  // Global Card Rules(Tablet layout) //
   .card {
     padding: 15% 15% 0% 15%;
     .button-container {
       margin-top: 100px;
     }
   }
+
+  .card:hover{
+    height: 600px;
+  }
+
+  // Global Card Rules(Tablet layout) //
   #card-1 {
     border-radius: 2% 2% 0% 0%;
   }
@@ -126,13 +147,14 @@ body {
   }
 }
 
-// Mobile Layout
+// Mobile Layout //
 @media (max-width: 480px) {
   .container-fluid {
     margin-bottom: 750px;
     padding: 25% 10%;
   }
 
+  // Global Card Rules(Moblie Layout) //
   .card {
     padding: 15% 15% 0% 15%;
     height: 495px;
@@ -149,10 +171,16 @@ body {
     }
   }
 
+  .card:hover{
+    height: 495px;
+  }
+
+  // Card: Sedans(Mobile layout) //
   #card-1 {
     border-radius: 2% 2% 0% 0%;
   }
 
+  // Card: Luxury(Mobile layout) //
   #card-3 {
     border-radius: 0% 0% 2% 2%;
   }

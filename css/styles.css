@@ -21,6 +21,8 @@ body {
 .card {
   height: 600px;
   padding: 3% 4%;
+  border-radius: 0%;
+  transition: 0.15s ease-in-out;
 }
 .card .pic {
   margin-top: 15px;
@@ -49,6 +51,10 @@ body {
   height: 55px;
   width: 180px;
   border: none;
+}
+
+.card:hover {
+  height: 620px;
 }
 
 #card-1 {
@@ -105,6 +111,10 @@ body {
     margin-top: 100px;
   }
 
+  .card:hover {
+    height: 600px;
+  }
+
   #card-1 {
     border-radius: 2% 2% 0% 0%;
   }
@@ -131,6 +141,10 @@ body {
   }
   .card .button-container button {
     width: 70%;
+  }
+
+  .card:hover {
+    height: 495px;
   }
 
   #card-1 {
