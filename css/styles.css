@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+.row {
+  height: 100vh;
+}
+
+.card {
+  height: 600px;
+  padding: 3% 4%;
+}
+.card .pic {
+  margin-top: 15px;
+}
+.card .text-container {
+  margin-top: 40px;
+}
+.card .text-container .header {
+  margin-bottom: 30px;
+}
+.card .text-container .header h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-size: 2.8rem;
+}
+.card .text-container .description p {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2;
+}
+.card .button-container {
+  margin-top: 110px;
+}
+.card .button-container button {
+  border-radius: 100px 100px 100px 100px;
+  height: 55px;
+  width: 180px;
+  border: none;
+}
+
+#card-1 {
+  background-color: #e38826;
+  border-radius: 2% 0% 0% 2%;
+}
+#card-1 #button-1 {
+  color: #e38826;
+  transition: 0.4s ease-in-out;
+}
+#card-1 #button-1:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px #f2f2f2 solid;
+}
+
+#card-2 {
+  background-color: #006970;
+}
+#card-2 #button-2 {
+  color: #006970;
+  transition: 0.4s ease-in-out;
+}
+#card-2 #button-2:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px #f2f2f2 solid;
+}
+
+#card-3 {
+  background-color: #004241;
+  border-radius: 0% 2% 2% 0%;
+}
+#card-3 #button-3 {
+  color: #004241;
+  transition: 0.4s ease-in-out;
+}
+#card-3 #button-3:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px #f2f2f2 solid;
+}
+
+@media (max-width: 991px) {
+  .container-fluid {
+    padding: 15% 10%;
+    margin-bottom: 1100px;
+  }
+
+  .card {
+    padding: 15% 15% 0% 15%;
+  }
+  .card .button-container {
+    margin-top: 100px;
+  }
+
+  #card-1 {
+    border-radius: 2% 2% 0% 0%;
+  }
+
+  #card-3 {
+    border-radius: 0% 0% 2% 2%;
+  }
+}
+@media (max-width: 480px) {
+  .container-fluid {
+    margin-bottom: 750px;
+    padding: 25% 10%;
+  }
+
+  .card {
+    padding: 15% 15% 0% 15%;
+    height: 495px;
+  }
+  .card h1 {
+    font-size: 2.5rem;
+  }
+  .card .button-container {
+    margin-top: 15px;
+  }
+  .card .button-container button {
+    width: 70%;
+  }
+
+  #card-1 {
+    border-radius: 2% 2% 0% 0%;
+  }
+
+  #card-3 {
+    border-radius: 0% 0% 2% 2%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

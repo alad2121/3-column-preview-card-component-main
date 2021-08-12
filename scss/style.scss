@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+.row {
+  height: 100vh;
+}
+.card {
+  height: 600px;
+  padding: 3% 4%;
+  .pic {
+    margin-top: 15px;
+  }
+
+  .text-container {
+    margin-top: 40px;
+    .header {
+      margin-bottom: 30px;
+      h1 {
+        font-family: "Big Shoulders Display", cursive;
+
+        color: hsl(0, 0%, 95%);
+        font-size: 2.8rem;
+      }
+    }
+
+    .description {
+      p {
+        font-size: 0.9375rem;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 2;
+      }
+    }
+  }
+  .button-container {
+    margin-top: 110px;
+    // height: 90%;
+    button {
+      //    margin-top: 110px;
+      border-radius: 100px 100px 100px 100px;
+      height: 55px;
+      width: 180px;
+      border: none;
+    }
+  }
+}
+
+#card-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 2% 0% 0% 2%;
+  #button-1 {
+    color: hsl(31, 77%, 52%);
+    transition: 0.4s ease-in-out;
+  }
+
+  #button-1:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px hsl(0, 0%, 95%) solid;
+  }
+}
+
+#card-2 {
+  background-color: hsl(184, 100%, 22%);
+
+  #button-2 {
+    color: hsl(184, 100%, 22%);
+    transition: 0.4s ease-in-out;
+  }
+  #button-2:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px hsl(0, 0%, 95%) solid;
+  }
+}
+
+#card-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0% 2% 2% 0%;
+
+  #button-3 {
+    color: hsl(179, 100%, 13%);
+    transition: 0.4s ease-in-out;
+  }
+
+  #button-3:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px hsl(0, 0%, 95%) solid;
+  }
+}
+
+// Tablet Layout
+@media (max-width: 991px) {
+  
+  .container-fluid {
+    padding: 15% 10%;
+    margin-bottom: 1100px;
+  }
+
+  .card {
+    padding: 15% 15% 0% 15%;
+    .button-container {
+      margin-top: 100px;
+    }
+  }
+  #card-1 {
+    border-radius: 2% 2% 0% 0%;
+  }
+
+  #card-3 {
+    border-radius: 0% 0% 2% 2%;
+  }
+}
+
+// Mobile Layout
+@media (max-width: 480px) {
+  .container-fluid {
+    margin-bottom: 750px;
+    padding: 25% 10%;
+  }
+
+  .card {
+    padding: 15% 15% 0% 15%;
+    height: 495px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .button-container {
+      margin-top: 15px;
+      button {
+        width: 70%;
+      }
+    }
+  }
+
+  #card-1 {
+    border-radius: 2% 2% 0% 0%;
+  }
+
+  #card-3 {
+    border-radius: 0% 0% 2% 2%;
+  }
+}
